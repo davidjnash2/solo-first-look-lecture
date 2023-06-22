@@ -33,6 +33,12 @@ function Nav() {
             </Link>
 
             <LogOutButton className="navLink" />
+            {
+              user.access_level === 1 && 
+              <Link className="navLink" to="/admin">
+                Admin
+              </Link>
+            }
           </>
         )}
 
